@@ -1,5 +1,3 @@
-[3, 8, 12, 4, 11, 7];
-
 function hasTargetSum(array, target) {
   for (let i = 0; i < array.length; i++) {
     for (let j = i + 1; j < array.length; j++) {
@@ -12,7 +10,7 @@ function hasTargetSum(array, target) {
 }
 
 /* 
-  Write the Big O time complexity of your function here
+O(n²)
 */
 
 /* 
