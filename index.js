@@ -1,5 +1,14 @@
+[3, 8, 12, 4, 11, 7];
+
 function hasTargetSum(array, target) {
-  // Write your algorithm here
+  for (let i = 0; i < array.length; i++) {
+    for (let j = i + 1; j < array.length; j++) {
+      if (array[i] + array[j] === target) {
+        return true;
+      }
+    }
+  }
+  return false;
 }
 
 /* 
@@ -7,9 +16,9 @@ function hasTargetSum(array, target) {
 */
 
 /* 
-  Add your pseudocode here
-*/
-
+  > The function receives two inputs, an array and a target number.
+  > If the some of any two numbers is equal to the target number then return true
+  > The function returns true or false
 /*
   Add written explanation of your solution here
 */
@@ -32,3 +41,5 @@ if (require.main === module) {
 }
 
 module.exports = hasTargetSum;
+
+//console.log(hasTargetSum([22, 19, 4, 6, 30], 25));
